@@ -1,855 +1,169 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,99.9,100..900;1,99.9,100..900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <title>CLINCON</title>
+    <title>Dog Tinder</title>
+    <link rel="stylesheet" href="./css/style.css"> <!-- Link para o arquivo CSS externo -->
 </head>
 <body>
-    
-    <header>
-        <div class="content">
-            <h3><span class="color">Black</span> Friday</h3>
-            <p class="text-one"><span class="pequeno">Up to</span> <span class="number">59%</span> <span
-                    class="off">OFF</span> </p>
-            <button class="btn">
-                SHOP NOW <i class="fas fa-arrow-right"></i>
-            </button>
-        </div>
-        <div class="top-bar">
-            <p class="text">Welcome to Clicon online eCommerce store.</p>
-            <div class="top-right">
-                <div class="social-icons">
-                    Follow us:
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-                <div class="language-currency">
-                    <div class="dropdown" id="language-dropdown">
-                        <span>Eng <i class="fas fa-chevron-down"></i></span>
-                        <div class="dropdown-content">
-                            <a href="#" data-lang="en">English</a>
-                            <a href="#" data-lang="pt">Português</a>
-                            <a href="#" data-lang="es">Español</a>
-                            <a href="#" data-lang="fr">Français</a>
-                        </div>
-                    </div>
-                    <div class="dropdown" id="currency-dropdown">
-                        <span>USD <i class="fas fa-chevron-down"></i></span>
-                        <div class="dropdown-content">
-                            <a href="#" data-currency="USD">USD</a>
-                            <a href="#" data-currency="EUR">EUR</a>
-                            <a href="#" data-currency="AOA">AOA (Kwanza)</a>
-                            <a href="#" data-currency="GBP">GBP</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-        <!-- Cabeçalho Principal -->
-        <div class="header">
-            <div class="logo">
-                <img src="img/logo.png" alt="">
-            </div>
-            <div class="search-bar">
-                <input type="text" placeholder="Search for anything...">
-                <button><i class="fas fa-search"></i></button>
-            </div>
-            <div class="user-actions">
-                <div class="cart-icon">
-                    <a href="#"><i class="fas fa-shopping-cart"></i></a>
-                    <span class="cart-count" id="cart-count">0</span>
-                </div>
-                <a href="#"><i class="far fa-heart"></i></a>
-                <a href="#"><i class="far fa-user"></i></a>
-            </div>
-        </div>
-    
-        <!-- Barra de Navegação -->
-        <div class="navbar">
-            <div class="category-dropdown" id="categoryDropdown">
-                <span id="categoryToggle">All Category <i class="fas fa-chevron-down"></i></span>
-                <div class="dropdown-content category-content" id="categoryContent">
-                    <a href="#">Computer & Laptop</a>
-                    <a href="#">Computer Acessories</a>
-                    <a href="#">Smartphones</a>
-                    <a href="#">Headphone</a>
-                    <a href="#">Mobile Acessories</a>
-                    <a href="#">Gaming Console</a>
-                    <a href="#">Camera & Photo</a>
-                    <a href="#">TV & Homes Appliances</a>
-                    <a href="#">Watch & Acessories</a>
-                    <a href="#">GPS & Navigation</a>
-                    <a href="#">Warable Technology</a>
-                </div>
-            </div>
-            <div class="nav-links">
-                <a href="#"><i class="fas fa-map-marker-alt"></i> Track Order</a>
-                <a href="#"><i class="fas fa-exchange-alt"></i> Compare</a>
-                <a href="#"><i class="fas fa-headset"></i> Customer Support</a>
-                <a href="#"><i class="fas fa-question-circle"></i> Need Help</a>
-            </div>
-            <div class="contact-phone">
-                <i class="fas fa-phone-alt"></i> +1-202-555-0104
-            </div>
-        </div>
-    
-    </header>
-    
-    <!-- Hero Section -->
-    
-    <section class="hero-section">
-    
-        <!-- Main Feature -->
-        <div class="main-feature">
-            <div class="feature-content">
-                <div class="letra">
-                    <span class="subtitle"> <i class="fas fa-row"></i>THE BEST PLACE TO PLAY</span>
-                    <h2 class="title">Xbox Console</h2>
-                    <p class="description">Save up to 50% on select Xbox consoles & get 3 months of PC Game Pass.</p>
-                </div>
-                <button class="shop-now-default">SHOP NOW <i class="fas fa-arrow-right"></i></button>
-            </div>
-            <div class="xbox">
-                <img src="img/xbox.png" alt="Xbox Console" id="hero-image">
-                <div class="price-tag"><img src="img/Price.png" alt=""></div>
-            </div>
-            <div class="slider-dots">
-                <span class="dot active"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <img src="img/dot.png" alt="">
-            </div>
-        </div>
-        <!-- Side Features -->
-        <div class="side-features">
-            <!-- Pixel Promo -->
-            <div class="side-feature pixel-promo">
-                <div class="feature-label">SUMMER SALES</div>
-                <h3 class="feature-title">New Google <br> Pixel 6 Pro</h3>
-                <div class="discount-label">29% OFF</div>
-                <div class="phone-google">
-                    <img src="img/phone 1.png" alt="Google Pixel 6 Pro">
-                </div>
-                <div class="shop-now-btn">
-                    <button class="btn-google">SHOP NOW <i class="fas fa-arrow-right"></i></button>
-                </div>
-            </div>
-            <!-- FlipBuds Promo -->
-            <div class="side-feature flipbuds-promo">
-                <div class="feature-image">
-                    <img src="img/image 4.png" alt="Xiaomi FlipBuds Pro">
-                </div>
-                <div class="feature-content">
-                    <h3 class="feature-title">Xiaomi <br> FlipBuds Pro</h3>
-                    <div class="feature-price"><span>$299 USD</span></div>
-                    <button class="shop-now-btn">SHOP NOW <i class="fas fa-arrow-right"></i></button>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <section class="info">
-        <div class="top-info">
-    
-            <div class="info-item">
-                <h4 class="info-title"> <i class="fa-solid fa-box"></i>FASTED DELIVERY </h4><br>
-                <p class="info-subtitle">Deliveryin24H
-                <p>
-            </div>
-            <hr color="#ddd">
-            <div class="info-item">
-                <h3 class="info-title"> <i class="fa-solid fa-trophy"></i>24 HOURS RETURN</h3><br>
-                <p class="info-subtitle">100%money-backguarantee</p>
-            </div>
-            <hr color="#ddd">
-            <div class="info-item">
-                <h3 class="info-title"> <i class="fa-solid fa-credit-card"></i>SECURE PAYMENT</h3><br>
-                <p class="info-subtitle">Your money is safe</p>
-            </div>
-            <hr color="#ddd">
-            <div class="info-item">
-                <h3 class="info-title"> <i class="fa-solid fa-headphones"></i>SUPPORT 24/7</h3><br>
-                <p class="info-subtitle">Live contact/message</p>
-            </div>
-        </div>
-    </section>
-    
-    <section class="deal">
-    
-        <div class="deals-header">
-            <div class="deals-left">
-                <div class="countdown"> <span class="deal-title">Best Deals</span>
-                    Deals ends in: <span id="countdown-timer">16d:22h : 59m : 59s</span></div>
-    
-            </div>
-            <a id="toggleButton"> Browse All Product <i class="fas fa-arrow-right"></i> </a>
-        </div>
-    
-        <div id="productGrid" class="products">
-            <div class="product-grid">
-                <!-- Xbox mais largo -->
-                <div class="product wide">
-                    <div class="badge discount">32% OFF</div>
-                    <div class="badge hot">HOT</div>
-                    <div class="image">
-                        <img src="img/play5.png" alt="PS5" />
-                    </div>
-                    <div class="details">
-                        <div class="stars">★★★★★ <span>(52,677)</span></div>
-                        <div class="name">Xbox Series S - 512GB SSD Console with Wireless Controller - EU Version</div>
-                        <div class="price"><span class="old">$865.99</span> <span class="new">$442.12</span></div>
-                        <div class="desc">Games built using the Xbox Series X|S development kit showcase unparalleled load
-                            times, visuals.</div>
-                        <div class="actions">
-                            <button class="wishlist">♡</button>
-                            <button class="add-to-cart"> <img src="img/shopping-cart.png" alt="img-add">ADD TO CARD</button>
-                            <button class="wishlist"><i class="fa-sold fa-eye"></i></button>
-                        </div>
-                    </div>
-                </div>
-                <!-- Restantes produtos -->
-                <div class="product sold">
-                    <div class="we-product">
-                        <div class="badge sold-out">SOLD OUT</div>
-                        <div class="image"><img src="img/drone.png" alt="Drone" /></div>
-                        <div class="details">
-                            <div class="name">Bose Sport Earbuds - Wireless Earphones - Bluetooth In Ear...</div>
-                            <div class="price">$2,300</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="product sold">
-                    <div class="we-product">
-    
-                        <div class="image"><img src="img/Image (5).png" alt="Smartphone" /></div>
-                        <div class="details">
-                            <div class="name">Simple Mobile 4G LTE Prepaid Smartphone</div>
-                            <div class="price">$220</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="product sold">
-                    <div class="we-product">
-                        <div class="badge discount">19% OFF</div>
-                        <div class="image"><img src="img/comando-xbox.png" alt="TV Gamepad" /></div>
-                        <div class="details">
-                            <div class="name">4K UHD LED Smart TV with Chromecast Built-in</div>
-                            <div class="price"><span class="old">$865</span> <span class="new">$1,50</span></div>
-                        </div>
-                    </div>
-                </div>
-    
-                <br>
-    
-                <div class="product sold">
-    
-                    <div class="we-product">
-                        <div class="image"><img src="img/phone.png" alt="phone" /></div>
-                        <div class="details">
-                            <div class="name">Dell Optiplex 7000x7480 All-in-One Computer Monitor</div>
-                            <div class="price">$299</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="product sold">
-                    <div class="we-product">
-                        <div class="image"><img src="img/drone-phone.png" alt="Toy Drone" /></div>
-                        <div class="details">
-                            <div class="name">Portable Wshing Machine, 11lbs capacity Model 18NMF1AM</div>
-                            <div class="price"><span class="old">$865.99</span> <span class="new">$70</span></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="product sold">
-                    <div class="we-product">
-                        <div class="badge hot">HOT</div>
-                        <div class="image"><img src="img/monitor.png" alt="Monitor" /></div>
-                        <div class="details">
-                            <div class="name">2-Barrel Carburetor Carb 2100 Engine Increase Horsepower</div>
-                            <div class="price">$160</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </section>
-    
-    <section class="shop-with-categorys">
-        <h2 class="more-product">Shop With Categorys</h2>
-        <div class="product-category">
-            <img src="img/laptop-computer.png" alt="">
-            <p> Computer & Laptop</p>
-        </div>
-        <div class="product-category">
-            <img src="img/Image (12).png" alt="">
-            <p> SmartPhone</p>
-        </div>
-        <div class="product-category">
-            <img src="img/Image (13).png" alt="">
-            <p> Headphones</p>
-        </div>
-        <div class="product-category">
-            <img src="img/Image (32).png" alt="">
-            <p> Accessories</p>
-        </div>
-        <div class="product-category">
-            <img src="img/camera&photo.png" alt="">
-            <p> Camera & Photo</p>
-        </div>
-        <div class="product-category">
-            <img src="img/Image (22).png" alt="">
-            <p> TV & Homes</p>
-    
-        </div>
-        <button class="btn-right"><i class="fas fa-arrow-right"></i></button>
-        <button class="btn-left"><i class="fas fa-arrow-left"></i></button>
-    
-    </section>
-    
-    <section class="featured-product">
-        <img src="img/Banner.png" alt="">
-        <h2 class="title-featured">Featured Products</h2>
-        <nav class="navegation-product">
-            <a href="#" class="grey">All Product</a>
-            <a href="#" class="grey">Smart Phone</a>
-            <a href="#" class="grey">Laptop</a>
-            <a href="#" class="grey">Headphone</a>
-            <a href="#" class="grey">TV</a>
-    
-            <a href="#" id="toggle-products" class="feature-orange">
-                Browse All Product <i class="fas fa-arrow-right"></i>
-            </a>
-        </nav>
-    </section>
-    <div class="imagens-featured" id="main-products">
-        <!-- Primeira linha -->
-        <div class="product-row">
-            <!-- Produto 1 - Fones -->
-            <div class="product-card">
-                <div class="badge hot">HOT</div>
-                <div class="product-image">
-                    <img src="img/Image (17).png" alt="">
-                </div>
-                <div class="product-info">
-                    <div class="rating">
-                        <span class="stars">★★★★★</span>
-                        <span class="count">(258)</span>
-                    </div>
-                    <h3 class="product-title">TOZO T6 True Wireless Earbuds Bluetooth Headphones</h3>
-                    <div class="price">$39.99</div>
-                </div>
-            </div>
-    
-            <!-- Produto 2 - Samsung Galaxy -->
-            <div class="product-card">
-                <div class="product-image samsung">
-                    <img src="img/phone.png" alt="">
-                </div>
-                <div class="product-info">
-                    <div class="rating">
-                        <span class="stars">★★★★★</span>
-                        <span class="count">(341)</span>
-                    </div>
-                    <h3 class="product-title">Samsung Electronics Samsung Galaxy S20 5G</h3>
-                    <div class="price">$799.99</div>
-                </div>
-            </div>
-    
-            <!-- Produto 3 - Amazon Basics -->
-            <div class="product-card">
-                <div class="badge best-value">BEST VALUE</div>
-                <div class="product-image">
-                    <img src="img/Image (19).png" alt="">
-                </div>
-                <div class="product-info">
-                    <div class="rating">
-                        <span class="stars">★★★★★</span>
-                        <span class="count">(815)</span>
-                    </div>
-                    <h3 class="product-title">Amazon Basics High-Speed HDMI Cable (18 Gbps, 4K/60...</h3>
-                    <div class="price">$10.99</div>
-                </div>
-            </div>
-    
-            <!-- Produto 4 - Fones Over-ear -->
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="img/Image (33).png" alt="">
-                </div>
-                <div class="product-info">
-                    <div class="rating">
-                        <span class="stars">★★★★☆</span>
-                        <span class="count">(456)</span>
-                    </div>
-                    <h3 class="product-title">Portable Wireless Machine, Ultra-Capacity Up to Mount SAMD...</h3>
-                    <div class="price">$129.99</div>
-                </div>
-            </div>
-        </div>
-    
-        <!-- Segunda linha -->
-        <div class="product-row">
-            <!-- Produto 5 - Drone -->
-            <div class="product-card">
-                <div class="badge sale">SALE</div>
-                <div class="product-image">
-                    <img src="img/Image (21).png" alt="">
-                </div>
-                <div class="product-info">
-                    <div class="rating">
-                        <span class="stars">★★★★☆</span>
-                        <span class="count">(182)</span>
-                    </div>
-                    <h3 class="product-title">Wind Resistant Gaming Headphones with USB</h3>
-                    <div class="price">$79.99</div>
-                </div>
-            </div>
-    
-            <!-- Produto 6 - Smart TV -->
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="img/Image (22).png" alt="">
-                </div>
-                <div class="product-info">
-                    <div class="rating">
-                        <span class="stars">★★★★★</span>
-                        <span class="count">(1247)</span>
-                    </div>
-                    <h3 class="product-title">SAMSUNG 65" Class 4K Crystal UHD (2160P) LED Smart TV with Alexa Built-in</h3>
-                    <div class="price">$497.99</div>
-                </div>
-            </div>
-    
-            <!-- Produto 7 - Monitor -->
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="img/Image (23).png" alt="">
-                </div>
-                <div class="product-info">
-                    <div class="rating">
-                        <span class="stars">★★★★☆</span>
-                        <span class="count">(89)</span>
-                    </div>
-                    <h3 class="product-title">Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin</h3>
-                    <div class="price">$89.99</div>
-                </div>
-            </div>
-    
-            <!-- Produto 8 - Computador -->
-            <div class="product-card">
-                <div class="badge new">NEW</div>
-                <div class="product-image">
-                    <img src="img/Image (24).png" alt="">
-                </div>
-                <div class="product-info">
-                    <div class="rating">
-                        <span class="stars">★★★★★</span>
-                        <span class="count">(2034)</span>
-                    </div>
-                    <h3 class="product-title">HP Pavilion Desktop Computer, Intel Core Processor, 8GB RAM</h3>
-                    <div class="price">$519.99</div>
-    
-                </div>
-            </div>
-        </div>
-    
-    
-        <div class="banners">
-            <div class="bannerone">
-                <img src="img/bannerone.png" alt="">
-            </div>
-    
-            <div class="bannertwo">
-                <div class="mom">
-                    <h4 class="badge-hot">Introducing New</h4>
-                    <h3>Xiaomi Mi 11 Ultra 12GB+256GB</h3>
-                    <p>*Data provided by internal <br> Laboratories. Industry measurment</p>
-                    <button>SHOP NOW <i class="fas fa-arrow-right"></i></button>
-                </div>
-                <div class="banner-img">
-                    <img src="img/Image (25).png" alt="">
-                </div>
-            </div>
-            <div class="discount">
-                <h2 class="title-featured">Computers Acessories</h2>
-                <nav class="navegation-product">
-                    <a href="#" class="grey">All Product</a>
-                    <a href="#" class="grey">Keyboard & Mouse</a>
-                    <a href="#" class="grey">Headphone</a>
-                    <a href="#" class="grey">Webcam</a>
-                    <a href="#" class="grey">Printer</a>
-    
-                    <a href="#" id="toggle-products" class="feature-orange">
-                        Browse All Product <i class="fas fa-arrow-right"></i>
-                    </a>
-                </nav>
-    
-            </div>
-        </div>
-    
-        <div class="container-discount">
-            <div class="badge best-value">BEST DEALS</div>
-            <img src="img/Image (34).png" alt="">
-            <div class="product-info">
-                <div class="rating">
-                    <span class="stars">★★★★★</span>
-                    <span class="count">(815)</span>
-                </div>
-                <h3 class="product-title">Amazon Basics High-Speed HDMI Cable (18 Gbps, 4K/60...</h3>
-                <div class="price">$10.99</div>
-            </div>
-        </div>
-        <div class="container-discount">
-            <img src="img/Image (33).png" alt="">
-            <div class="product-info">
-                <div class="rating">
-                    <span class="stars">★★★★★</span>
-                    <span class="count">(815)</span>
-                </div>
-                <h3 class="product-title">Amazon Basics High-Speed HDMI Cable (18 Gbps, 4K/60...</h3>
-                <div class="price">$10.99</div>
-            </div>
-        </div>
-        <div class="container-discount">
-            <div class="badge hot">HOT</div>
-            <img src="img/Image (32).png" class="small-img">
-            <div class="product-info">
-                <div class="rating">
-                    <span class="stars">★★★★★</span>
-                    <span class="count">(815)</span>
-                </div>
-                <h3 class="product-title">Amazon Basics High-Speed HDMI Cable (18 Gbps, 4K/60...</h3>
-                <div class="price">$10.99</div>
-            </div>
-        </div>
-        <div class="container-discount">
-            <img src="img/Image (31).png" alt="">
-            <div class="product-info">
-                <div class="rating">
-                    <span class="stars">★★★★★</span>
-                    <span class="count">(815)</span>
-                </div>
-                <h3 class="product-title">Amazon Basics High-Speed HDMI Cable (18 Gbps, 4K/60...</h3>
-                <div class="price">$10.99</div>
-            </div>
-        </div>
-        <section class="distance">
-            <div class="container-discount">
-                <img src="img/Image (27).png" alt="">
-                <div class="product-info">
-                    <div class="rating">
-                        <span class="stars">★★★★★</span>
-                        <span class="count">(815)</span>
-                    </div>
-                    <h3 class="product-title">Amazon Basics High-Speed HDMI Cable (18 Gbps, 4K/60...</h3>
-                    <div class="price">$10.99</div>
-                </div>
-            </div>
-            <div class="container-discount">
-                <div class="badge new">SALE</div>
-                <img src="img/Image (28).png" alt="">
-                <div class="product-info">
-                    <div class="rating">
-                        <span class="stars">★★★★★</span>
-                        <span class="count">(815)</span>
-                    </div>
-                    <h3 class="product-title">Amazon Basics High-Speed HDMI Cable (18 Gbps, 4K/60...</h3>
-                    <div class="price">$10.99</div>
-                </div>
-            </div>
-            <div class="container-discount">
-                <img src="img/Image (29).png" alt="">
-                <div class="product-info">
-                    <div class="rating">
-                        <span class="stars">★★★★★</span>
-                        <span class="count">(815)</span>
-                    </div>
-                    <h3 class="product-title">Amazon Basics High-Speed HDMI Cable (18 Gbps, 4K/60...</h3>
-                    <div class="price">$10.99</div>
-                </div>
-            </div>
-            <div class="container-discount">
-                <img src="img/Image (30).png" alt="">
-                <div class="product-info">
-                    <div class="rating">
-                        <span class="stars">★★★★★</span>
-                        <span class="count">(815)</span>
-                    </div>
-                    <h3 class="product-title">Amazon Basics High-Speed HDMI Cable (18 Gbps, 4K/60...</h3>
-                    <div class="price">$10.99</div>
-                </div>
-            </div>
-    
-            <div class="organize">
-                <div class="card card-yellow">
-                    <img src="img/Image (26).png" alt="Xiaomi Earbuds">
-                    <h2>Xiaomi True <br>Wireless Earbuds</h2>
-                    <p>Escape the noise. It's time to hear the magic with Xiaomi-Earbuds.</p>
-                    <div class="price-two">$299 USD</div>
-                    <a href="#" class="shop-btn-orange">SHOP NOW<i class="fas fa-arrow-right"></i></a>
-                </div>
-                <p class="p-price">only for:</p>
-    
-                <div class="card card-blue">
-                    <div class="tag">SUMMER SALES</div>
-                    <h2>37% DISCOUNT</h2>
-                    <p>only for <span class="highlight">SmartPhone</span> product.</p>
-                    <a href="#" class="shop-btn blue">SHOP NOW<i class="fas fa-arrow-right"></i></a>
-                </div>
-    
-            </div>
-    
-        </section>
-    
-        <section class="macbox">
-            <p>SAVE UP TO $200.00</p>
-            <h3>Macbook Pro</h3>
-            <h4>Apple M1 Max Chip. 32GB Unified <br> Memory, 1TB SSD Storage</h4>
-            <img src="img/Image (35).png" class="Computer-img">
-            <img src="img/Discount (1).png" class="price-computer">
-        </section>
-    
-        <section class="flash-sale">
-            <div class="flash-title">
-                <h3 class="sale-title-one">FLASH SALE TODAY</h3>
-                <h3 class="sale-title-two">BEST SALLERS</h3>
-                <h3 class="sale-title-three">TOP RATED</h3>
-                <h3 class="sale-title-four">NEW ARRIVAL</h3>
-            </div>
-    
-            <div class="flash">
-                <div class="flash-box-img">
-                    <img src="img/Image (28).png" alt="">
-                    <p>Bose Sport Earbuds-Wireless <br> Earphones-Bluetooth in Ear...</p>
-                    <h5 class="flash-price">$1,500</h5>
-                </div>
-    
-                <div class="flash-box-img">
-                    <img src="img/ps5-png.png" alt="">
-                    <p>Samsung Electronics <br> Samsung Galaxi S21 5G</p>
-                    <h5 class="flash-price">$1,500</h5>
-                </div>
-    
-                <div class="flash-box-img">
-                    <img src="img/Image (22).png" alt="">
-                    <p>Portable Wishing Machine<br> 11bs capacity Model 18NMF...</p>
-                    <h5 class="flash-price">$1,500</h5>
-                </div>
-    
-                <div class="flash-box-img">
-                    <img src="img/Image (24).png" alt="">
-                    <p> T0Z0 T6 wireless<br> Earbuds Bluetooth Headpho...</p>
-                    <h5 class="flash-price">$1,500</h5>
-                </div>
-            </div>
-        </section>
-    
-        <div class="flash">
-            <div class="flash-box-img">
-                <img src="img/phone.png" alt="">
-                <p> Simple Mobile 4G LTE Prepaid  <br> Smartphone</p>
-                <h5 class="flash-price">$1,500</h5>
-            </div>
-    
-            <div class="flash-box-img">
-                <img src="img/drone-phone.png" alt="">
-                <p> Simple Mobile 5G LTE Galaxy <br> 12 Mini 512GB Gaming Phone</p>
-                <h5 class="flash-price">$1,500</h5>
-            </div>
-    
-            <div class="flash-box-img">
-                <img src="img/drone.png" alt="">
-                <p> Sony DSCHX8 High Zoom <br> Point Shoot Camera</p>
-                <h5 class="flash-price">$1,500</h5>
-            </div>
-    
-            <div class="flash-box-img">
-                <img src="img/Image (29).png" alt="">
-                <p>JBL FLIP4-Waterproof<br> Portable-Bluetooth Speaker...</p>
-                <h5 class="flash-price">$1,500</h5>
-            </div>
-        </div>
-        </section>
-    
-        <div class="flash">
-            <div class="flash-box-img">
-                <img src="img/Image (32).png" alt="">
-                <p>4K UHD LED Smart TV with <br> Chromecast Buit-in...</p>
-                <h5 class="flash-price">$1,500</h5>
-            </div>
-    
-            <div class="flash-box-img">
-                <img src="img/Image (17).png" alt="">
-                <p>Sony DSCHXB High Zoom<br> Point & Shoot Camera...</p>
-                <h5 class="flash-price">$1,500</h5>
-            </div>
-    
-            <div class="flash-box-img">
-                <img src="img/image 6.png" alt="">
-                <p>Dell Optiplex 7000x7480 All- <br> in-One Computer Monitor...</p>
-                <h5 class="flash-price">$1,500</h5>
-            </div>
-    
-            <div class="flash-box-img">
-                <img src="img/comando-xbox.png" alt="">
-                <p>Wyze Cam Pan v2 1080p Pan/ <br> Tilt/Zoom Wi-Fi indoor Smar...</p>
-                <h5 class="flash-price">$1,500</h5>
-            </div>
-        </div>
-        </section>
-    
-        <section class="latest-new">
-    
-                   <h1 class="latest-h1">Latest News</h1>
-            <div class="new-mom">
-    
-                <div class="latest-img">
-                    <img src="img/unsplash_iZVrfElG1t0.png" alt="">
-                </div>
-                <div class="icons-lastest">
-                    <i class="fa-solid fa-user-circle"></i> Kristin
-                    <i class="fa-solid fa-calendar-alt"></i> 19 Dec, 2025
-                    <i class="fa-solid fa-comments"></i> 453
-                </div>
-                <div class="lastest-p-black">
-                    <p>Cras nisl dolor, accumsan et metus sit <br> amet, Vulputate condimentum dolor.</p>
-                </div>
-                <div class="lastest-p-grey">
-                    <p>Maecenas scelerisque, arcu quis tempus <br>egestas, ligula diam molestie lectus, tincidunt <br> malesuada
-                        arcu meteus posuere meteus.</p>
-                </div>
-                <div class="btn-read-more">
-                    <p>READ MORE <i class="fa-solid fa-arrow-right"></i></p>
-                </div>
-            </div>
-            <div class="new-mom">
-    
-                <div class="latest-img">
-                    <img src="img/unplash.png" alt="">
-                </div>
-                <div class="icons-lastest">
-                    <i class="fa-solid fa-user-circle"></i> Robert
-                    <i class="fa-solid fa-calendar-alt"></i> 28 Nov, 2015
-                    <i class="fa-solid fa-comments"></i> 738
-                </div>
-                <div class="lastest-p-black">
-                    <p>Curabitur pulvinar aliquam lectus, non<br> blandit erat mattis vitae.</p>
-                </div>
-                <div class="lastest-p-grey">
-                    <p>Mauris scelerisque odio id rutrum volutpat. <br>Pellentesque urna odio, vulpatate at tortor vitae<br> hendrerit blandit lorem.</p>
-                </div>
-                <div class="btn-read-more">
-                    <p>READ MORE <i class="fa-solid fa-arrow-right"></i></p>
-                </div>
-            </div>
-            <div class="new-mom">
-    
-                <div class="latest-img">
-                    <img src="img/unplash-phone.png" alt="">
-                </div>
-                <div class="icons-lastest">
-                    <i class="fa-solid fa-user-circle"></i> Arlene
-                    <i class="fa-solid fa-calendar-alt"></i> 9 May, 2014
-                    <i class="fa-solid fa-comments"></i> 826
-                </div>
-                <div class="lastest-p-black">
-                    <p>Curabitur massa orci, consectetur et<br> blandit ac, auctor et tellus.</p>
-                </div>
-                <div class="lastest-p-grey">
-                    <p>
-                        Pellentesque vestibulum lorem vel gravida <br> aliquam. Morbi porta, odio id suscipit mattis, <br> risus augue condimentum purus
-                    </p>
-                </div>
-                <div class="btn-read-more">
-                    <p>READ MORE <i class="fa-solid fa-arrow-right"></i></p>
-                </div>
-            </div>
-        </section>
-    
-      <!-- Newsletter -->
-      <section class="newsletter">
-        <h2>Subscribe to our newsletter</h2>
-        <p>Praesent fringilla erat a lacinia egestas. Donec vehicula tempor libero et <br> cursus. Donec non quam urna. Quisque vitae porta ipsum</p>
-        <div class="email">
-      <input type="email" placeholder="Email address">
-        <button>SUBSCRIBE →</button>
-        <div class="brands">
 
-          <img src="img/Group 22.png" class="google"/>
-          <img src="img/Frame.png" alt=""/>
-          <img src="img/philips 1.png" alt="" />
-          <img src="img/toshiba-1 1.png" alt="" />
-          <img src="img/samsung-4 1.png" alt="" />
+   <section class="hero">
+
+    <div class="container">
+
+        <!-- BLOCO ESQUERDO -->
+        <div class="left">
+            <h1>Meet new and<br> interesting dogs<br> nearby.</h1>
+            <div class="buttons">
+                <a href="#" class="btn-ios"><img width="30" height="30" src="https://img.icons8.com/glyph-neue/50/mac-os.png" alt="mac-os"/> <span>Download</span> </a>
+                <a href="#" class="btn-android"><img width="30" height="30" src="https://img.icons8.com/color/48/google-play.png" alt="google-play"/><span>Download</span> </a>
+            </div>
+        </div>
+
+        <!-- BLOCO DIREITO -->
+        <div class="right">
+                <img src="./images/WhatsApp_Image_2025-07-25_at_20.25.14_a35f5702-removebg-preview.png" alt="App Preview"  > 
         </div>
       </section>
-    
-      <!-- Rodapé -->
-      <footer>
-        <div class="footer-container">
-          <div class="footer-col">
-            <img src="img/Logo (2).png" alt="">
-            <p>Customer Support:</p>
-            <p>(629) 555-0129</p>
-            <p>4517 Washington Ave.<br>Manchester, Kentucky 39495</p>
-            <p>info@kinbo.com</p>
-          </div>
-          <div class="footer-col">
-            <h4>TOP CATEGORY</h4>
-            <ul>
-              <li>Computer & Laptop</li>
-              <li>SmartPhone</li>
-              <li>Headphone</li>
-              <li>Accessories</li>
-              <li>Camera & Photo</li>
-              <li>TV & Homes</li>
-              <li><a href="#">Browse All Product →</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4>QUICK LINKS</h4>
-            <ul>
-              <li>Shop Product</li>
-              <li>Shopping Cart</li>
-              <li>Wishlist</li>
-              <li>Compare</li>
-              <li>Track Order</li>
-              <li>Customer Help</li>
-              <li>About Us</li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4>DOWNLOAD APP</h4>
-            <button> <img src="img/Icon=google-play 1.png" alt=""> Google Play</button><br>
-            <button> <img src="img/Apple---Negative 1.png" alt=""> App Store</button>
-          </div>
-          <div class="footer-col">
-            <h4>POPULAR TAG</h4>
-            <div class="tags">
-              <span>Game</span><span>iPhone</span><span>TV</span><span>Asus Laptops</span>
-              <span>Macbook</span><span>SSD</span><span>Graphics Card</span>
-              <span>Power Bank</span><span>Smart TV</span><span>Speaker</span>
-              <span>Tablet</span><span>Microwave</span><span>Samsung</span>
+
+      <!-- FEATURES SECTION (a seção da imagem que você mostrou) -->
+    <section class="features">
+        <div class="features-row">
+            <div class="feature-item">
+                <h3>Easy to use.</h3>
+                <p>So easy to use, even your dog could do it.</p>
             </div>
-          </div>
+            <div class="feature-item">
+                <h3>Elite Clientele.</h3>
+                <p>We have all the dogs, the greatest dogs.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Guaranteed to work.</h3>
+                <p>Find the love of your dog's life or your money back.</p>
+            </div>
         </div>
-         <div class="nada">
-            
-         </div>
-        <p class="copyright">Kinbo - eCommerce Template © 2021. Design by Templatecookie</p>
-      </footer>
+    </section>
+
+    <section class="depoim">
+      <div class="depoim-all">
+          <div class="titulo">
+            <div class="main-text">
+                <h3>"I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog."</h3>
+                <h3>Woof</h3>
+            </div>
+
+          <div class="imagem">
+            <img class="dog" src="./images/dog-img.jpg" alt="dog">
+          </div>
+          <p class="dog1">Pebbles, New York</p>
+          
+       
+          <div class="imagem2">
+            <img src="./images/techcrunch.png" alt="dog">
+            <img src="./images/tnw.png" alt="d">
+            <img src="./images/mashable.png" alt="m">
+            <img src="./images/bizinsider.png" alt="m">
+          </div>
+
+      </div>
+
+    </section>
+
+    <section class="plan">
+        <div class="detail">
+            <h1>A Plan for Every Dog's Needs</h1>
+            <p>Simple and affordable price plans for you and your dog.</p>
+        </div>
+      
+        <div class="plan-item">
+        
+    <div class="card">
+
+    <h2>Chihuahua</h2>
+    <div class="price">$0<span>/mo</span></div>
+    <ul class="features">
+      <li>5 Matches Per Day</li>
+      <li>10 Messages Per Day</li>
+      <li>Unlimited App Usage</li>
+    </ul>
+    <button>Sign up for free</button>
+  </div>
+
+        <div class="card">
+
+    <h2>Chihuahua</h2>
+    <div class="price">$0<span>/mo</span></div>
+    <ul class="features">
+      <li>5 Matches Per Day</li>
+      <li>10 Messages Per Day</li>
+      <li>Unlimited App Usage</li>
+    </ul>
+    <button>Sign up for free</button>
+  </div>
+
+        <div class="card">
+
+    <h2>Chihuahua</h2>
+    <div class="price">$0<span>/mo</span></div>
+    <ul class="features">
+      <li>5 Matches Per Day</li>
+      <li>10 Messages Per Day</li>
+      <li>Unlimited App Usage</li>
+    </ul>
+    <button>Sign up for free</button>
+  </div>
+        </div>
+</section>
+
+<footer class="gradient-background">
+    <div class="footer">
+    <p >© Copywrit</p>
+    <div class="conta">
+        <ul>
+            <li><span>Contactos</span></li>
+            <li>Home</li>
+            <li>Price</li>
+            <li>feature</li>
+            <li>Price</li>
+            <li>E-mail</li>
+
+        </ul>
+
+    </div>
+
+     <div class="conta">
+        <ul>
+            <li><span>Contactos</span></li>
+            <li>Home</li>
+            <li>Price</li>
+            <li>feature</li>
+            <li>Price</li>
+            <li>E-mail</li>
+
+        </ul>
+
+    </div>
+
+     <div class="conta">
+        <ul>
+            <li><span>Contactos</span></li>
+            <li>Home</li>
+            <li>Price</li>
+            <li>feature</li>
+            <li>Price</li>
+            <li>E-mail</li>
+
+        </ul>
+
+    </div>
+    
+    
+    </div>
+ 
+
+</footer>
+    
+
 </body>
-
-    <script src="script.js"></script>
-
 </html>
